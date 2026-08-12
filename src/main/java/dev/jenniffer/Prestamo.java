@@ -1,29 +1,27 @@
-package dev.jenniffer;
+
 
 public class Prestamo {
+    String idPrestamo;
+    String rutEstudiante;
     String fechaPrestamo;
-    int montoPrestamo;
-    float tasaPrestamo;
-    int coutas;
+    boolean devuelto;
 
-    public Prestamo(){
-
-    }
-    public Prestamo(String fechaPrestamo, int montoPrestamo, float tasaPrestamo, int coutas){
-    }
-}
-    public boolean solicitar(){
-    return true;
+    public Prestamo(String idPrestamo, String rutEstudiante, String fechaPrestamo) {
+        this.idPrestamo = idPrestamo;
+        this.rutEstudiante = rutEstudiante;
+        this.fechaPrestamo = fechaPrestamo;
+        this.devuelto = false;
     }
 
+    public void registrarDevolucion() {
+        this.devuelto = true;
+    }
 
-    public int pagarCuota(int cuota){
-    return 0;
+    public boolean esVencido(String fechaActual) {
+        return false;
+    }
 
-
-
-
-
-
-
+    public void consultarEstado() {
+        System.out.println("Estado de devolución: " + devuelto);
+    }
 }

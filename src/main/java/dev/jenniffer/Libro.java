@@ -1,24 +1,12 @@
 package dev.jenniffer;
 
-/*
-package dev.jenniffer;
 
-public class libro {
-    String titulo;
-    int anio;
-    String autor;
-    public libro(String titulo, int anio, String autor) {
-
-    }
-    public void leer(){
-*/
 public class Libro {
     String isbn;
     String titulo;
     String autor;
     boolean disponible;
 
-    // 2. Constructor (Inicializador)
     public Libro(String isbn, String titulo, String autor) {
         this.isbn = isbn;
         this.titulo = titulo;
@@ -34,7 +22,7 @@ public class Libro {
         this.disponible = true;
     }
 
-    public boolean estaDisponible() {
+    public boolean disponible() {
         return this.disponible;
     }
 }
